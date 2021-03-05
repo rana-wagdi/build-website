@@ -4,20 +4,19 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <>
+function App() {
+  return (
+    <div>
     <Router>
        <Navbar />
-      <Switch>
-        <Route path='/' exact />
-          </Switch>
-          </Router>
-      </>
+       <Switch>
+         <Route path='/' exact />
+        </Switch>
+        </Router>
+      </div>
     );
   }
-}
+
 
 export default App;
  
